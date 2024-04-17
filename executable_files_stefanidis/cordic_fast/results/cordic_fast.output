@@ -1,0 +1,418 @@
+  _______   _                      ____                          _   
+ |__   __| (_)                    |  _ \                        | |  
+    | |     _   _ __ ___     ___  | |_) |   ___     ___    ___  | |_ 
+    | |    | | | '_ ` _ \   / _ \ |  _ <   / _ \   / _ \  / __| | __|
+    | |    | | | | | | | | |  __/ | |_) | | (_) | | (_) | \__ \ | |_ 
+    |_|    |_| |_| |_| |_|  \___| |____/   \___/   \___/  |___/  \__|
+                                                                     
+Teams members : Dimitrios Mangiras, Apostolos Stefanidis
+Advisor    : Georgios Dimitrakopoulos
+University    : Electrical and Computer Engineering of Democritus University of Thrace in Xanthi, Greece
+
+tau file: cordic_fast/cordic_fast.tau2019
+sdc file: cordic_fast/cordic_fast.sdc
+output verilog file: cordic_fast/results/cordic_fast.out.v
+output spef file: cordic_fast/results/cordic_fast.out.spef
+output file: cordic_fast/results/cordic_fast.output
+verilog file: cordic_fast.v
+spef file: cordic_fast.spef
+lib file 0: ../libs/contest.lib
+Design name: cordic_fast
+Path name: cordic_fast/
+
+Parsing LIB file [cordic_fast/../libs/contest.lib][+] 
+[+]  Done (runtime: 0.072014 seconds memory: +22 MB)
+Parsed lib 0
+Parsing VERILOG file [cordic_fast/cordic_fast.v][+] 
+[+]  Done (runtime: 0.209712 seconds memory: +13 MB)
+Parsing SDC file [cordic_fast/cordic_fast.sdc][+] 
+[+]  Done (runtime: 0.000178 seconds memory: +0 MB)
+Parsed SDC file successfully
+Parsing SPEF file [cordic_fast/cordic_fast.spef][+] 
+[+]  Done (runtime: 7e-06 seconds memory: +0 MB)
+Parsed SPEF file successfully
+[+] Initializing Scenario service
+[+] Initializing Scenario service Done (runtime: 0.002935 seconds memory: +6 MB)
+[+] Initializing RoutingEstimator service
+[+] Initializing RoutingEstimator service Done (runtime: 0.000566 seconds memory: +0 MB)
+[+] Initializing Timer service
+[+] Initializing Timer service Done (runtime: 0.011514 seconds memory: +27 MB)
+[+] Initializing Scenario Vector service
+[+] Initializing Scenario Vector service Done (runtime: 0.003059 seconds memory: +6 MB)
+[+] Initializing Timer Vector service
+[+] Initializing Timer Vector service Done (runtime: 0.011472 seconds memory: +28 MB)
+[+] Initializing Model Vector service
+[+] Initializing Model Vector service Done (runtime: 4e-06 seconds memory: +0 MB)
+[+] Initializing Model service
+[+] Initializing Model service Done (runtime: 2e-06 seconds memory: +0 MB)
+[+] Building RCTree from SPEF file
+[+] Building RCTree from SPEF file Done (runtime: 3e-06 seconds memory: +0 MB)
+Started: Thu Mar 21 22:52:02 2024
+
+BEGIN_ECO
+insert_gate TIMEBOOST_cell_2792 in01f04
+insert_net TIMEBOOST_net_682
+disconnect_pin FE_OFC773_n_25834:o
+connect_pin FE_OFC773_n_25834:o TIMEBOOST_net_682
+connect_pin TIMEBOOST_cell_2792:a TIMEBOOST_net_682
+connect_pin TIMEBOOST_cell_2792:o FE_OFN773_n_25834
+insert_gate TIMEBOOST_cell_2793 in01f04
+insert_net TIMEBOOST_net_683
+disconnect_pin FE_OFC773_n_25834:o
+connect_pin FE_OFC773_n_25834:o TIMEBOOST_net_683
+connect_pin TIMEBOOST_cell_2793:a TIMEBOOST_net_683
+connect_pin TIMEBOOST_cell_2793:o TIMEBOOST_net_682
+insert_gate TIMEBOOST_cell_4228 in01f04
+insert_net TIMEBOOST_net_1197
+disconnect_pin FE_OCP_RBC5653_n_2438:o
+connect_pin FE_OCP_RBC5653_n_2438:o TIMEBOOST_net_1197
+connect_pin TIMEBOOST_cell_4228:a TIMEBOOST_net_1197
+connect_pin TIMEBOOST_cell_4228:o FE_OCP_RBN5653_n_2438
+insert_gate TIMEBOOST_cell_4229 in01f04
+insert_net TIMEBOOST_net_1198
+disconnect_pin FE_OCP_RBC5653_n_2438:o
+connect_pin FE_OCP_RBC5653_n_2438:o TIMEBOOST_net_1198
+connect_pin TIMEBOOST_cell_4229:a TIMEBOOST_net_1198
+connect_pin TIMEBOOST_cell_4229:o TIMEBOOST_net_1197
+insert_gate TIMEBOOST_cell_5929 in01s10
+insert_net TIMEBOOST_net_1772
+disconnect_pin state_cordic_reg_1_:o
+connect_pin state_cordic_reg_1_:o TIMEBOOST_net_1772
+connect_pin TIMEBOOST_cell_5929:a TIMEBOOST_net_1772
+connect_pin TIMEBOOST_cell_5929:o state_cordic_1_
+insert_gate TIMEBOOST_cell_5930 in01s10
+insert_net TIMEBOOST_net_1773
+disconnect_pin state_cordic_reg_1_:o
+connect_pin state_cordic_reg_1_:o TIMEBOOST_net_1773
+connect_pin TIMEBOOST_cell_5930:a TIMEBOOST_net_1773
+connect_pin TIMEBOOST_cell_5930:o TIMEBOOST_net_1772
+insert_gate TIMEBOOST_cell_5931 in01s10
+insert_net TIMEBOOST_net_1774
+disconnect_pin state_cordic_reg_1_:o
+connect_pin state_cordic_reg_1_:o TIMEBOOST_net_1774
+connect_pin TIMEBOOST_cell_5931:a TIMEBOOST_net_1774
+connect_pin TIMEBOOST_cell_5931:o TIMEBOOST_net_1773
+insert_gate TIMEBOOST_cell_5932 in01s10
+insert_net TIMEBOOST_net_1775
+disconnect_pin state_cordic_reg_1_:o
+connect_pin state_cordic_reg_1_:o TIMEBOOST_net_1775
+connect_pin TIMEBOOST_cell_5932:a TIMEBOOST_net_1775
+connect_pin TIMEBOOST_cell_5932:o TIMEBOOST_net_1774
+insert_gate TIMEBOOST_cell_5933 in01s02
+insert_net TIMEBOOST_net_1776
+disconnect_pin g736251:c
+connect_pin g736251:c TIMEBOOST_net_1776
+connect_pin TIMEBOOST_cell_5933:a FE_OFN1_n_43918
+connect_pin TIMEBOOST_cell_5933:o TIMEBOOST_net_1776
+insert_gate TIMEBOOST_cell_5934 in01s02
+insert_net TIMEBOOST_net_1777
+disconnect_pin g736251:c
+connect_pin g736251:c TIMEBOOST_net_1777
+connect_pin TIMEBOOST_cell_5934:a TIMEBOOST_net_1776
+connect_pin TIMEBOOST_cell_5934:o TIMEBOOST_net_1777
+insert_gate TIMEBOOST_cell_8152 in01s06
+insert_net TIMEBOOST_net_2556
+disconnect_pin g748757:a
+connect_pin g748757:a TIMEBOOST_net_2556
+connect_pin TIMEBOOST_cell_8152:a n_27366
+connect_pin TIMEBOOST_cell_8152:o TIMEBOOST_net_2556
+insert_gate TIMEBOOST_cell_8153 in01s06
+insert_net TIMEBOOST_net_2557
+disconnect_pin g748757:a
+connect_pin g748757:a TIMEBOOST_net_2557
+connect_pin TIMEBOOST_cell_8153:a TIMEBOOST_net_2556
+connect_pin TIMEBOOST_cell_8153:o TIMEBOOST_net_2557
+insert_gate TIMEBOOST_cell_8154 in01s10
+insert_net TIMEBOOST_net_2558
+disconnect_pin g740555:a
+connect_pin g740555:a TIMEBOOST_net_2558
+connect_pin TIMEBOOST_cell_8154:a delay_sub_ln23_0_unr26_stage9_stallmux_q_2_
+connect_pin TIMEBOOST_cell_8154:o TIMEBOOST_net_2558
+insert_gate TIMEBOOST_cell_8155 in01s10
+insert_net TIMEBOOST_net_2559
+disconnect_pin g740555:a
+connect_pin g740555:a TIMEBOOST_net_2559
+connect_pin TIMEBOOST_cell_8155:a TIMEBOOST_net_2558
+connect_pin TIMEBOOST_cell_8155:o TIMEBOOST_net_2559
+insert_gate TIMEBOOST_cell_8156 in01s02
+insert_net TIMEBOOST_net_2560
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2560
+connect_pin TIMEBOOST_cell_8156:a TIMEBOOST_net_2560
+connect_pin TIMEBOOST_cell_8156:o rst
+insert_gate TIMEBOOST_cell_8157 in01s02
+insert_net TIMEBOOST_net_2561
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2561
+connect_pin TIMEBOOST_cell_8157:a TIMEBOOST_net_2561
+connect_pin TIMEBOOST_cell_8157:o TIMEBOOST_net_2560
+insert_gate TIMEBOOST_cell_8158 in01s02
+insert_net TIMEBOOST_net_2562
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2562
+connect_pin TIMEBOOST_cell_8158:a TIMEBOOST_net_2562
+connect_pin TIMEBOOST_cell_8158:o TIMEBOOST_net_2561
+insert_gate TIMEBOOST_cell_8159 in01s02
+insert_net TIMEBOOST_net_2563
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2563
+connect_pin TIMEBOOST_cell_8159:a TIMEBOOST_net_2563
+connect_pin TIMEBOOST_cell_8159:o TIMEBOOST_net_2562
+insert_gate TIMEBOOST_cell_8160 in01s01
+insert_net TIMEBOOST_net_2564
+disconnect_pin mux_while_ln12_psv_q_reg_8_:o
+connect_pin mux_while_ln12_psv_q_reg_8_:o TIMEBOOST_net_2564
+connect_pin TIMEBOOST_cell_8160:a TIMEBOOST_net_2564
+connect_pin TIMEBOOST_cell_8160:o mux_while_ln12_psv_q_8_
+insert_gate TIMEBOOST_cell_8161 in01s01
+insert_net TIMEBOOST_net_2565
+disconnect_pin mux_while_ln12_psv_q_reg_8_:o
+connect_pin mux_while_ln12_psv_q_reg_8_:o TIMEBOOST_net_2565
+connect_pin TIMEBOOST_cell_8161:a TIMEBOOST_net_2565
+connect_pin TIMEBOOST_cell_8161:o TIMEBOOST_net_2564
+insert_gate TIMEBOOST_cell_8162 in01s10
+insert_net TIMEBOOST_net_2566
+disconnect_pin TIMEBOOST_cell_8154:a
+connect_pin TIMEBOOST_cell_8154:a TIMEBOOST_net_2566
+connect_pin TIMEBOOST_cell_8162:a delay_sub_ln23_0_unr26_stage9_stallmux_q_2_
+connect_pin TIMEBOOST_cell_8162:o TIMEBOOST_net_2566
+insert_gate TIMEBOOST_cell_8163 in01s10
+insert_net TIMEBOOST_net_2567
+disconnect_pin TIMEBOOST_cell_8154:a
+connect_pin TIMEBOOST_cell_8154:a TIMEBOOST_net_2567
+connect_pin TIMEBOOST_cell_8163:a TIMEBOOST_net_2566
+connect_pin TIMEBOOST_cell_8163:o TIMEBOOST_net_2567
+insert_gate TIMEBOOST_cell_8164 in01s10
+insert_net TIMEBOOST_net_2568
+disconnect_pin TIMEBOOST_cell_8154:a
+connect_pin TIMEBOOST_cell_8154:a TIMEBOOST_net_2568
+connect_pin TIMEBOOST_cell_8164:a TIMEBOOST_net_2567
+connect_pin TIMEBOOST_cell_8164:o TIMEBOOST_net_2568
+insert_gate TIMEBOOST_cell_8165 in01s10
+insert_net TIMEBOOST_net_2569
+disconnect_pin TIMEBOOST_cell_8154:a
+connect_pin TIMEBOOST_cell_8154:a TIMEBOOST_net_2569
+connect_pin TIMEBOOST_cell_8165:a TIMEBOOST_net_2568
+connect_pin TIMEBOOST_cell_8165:o TIMEBOOST_net_2569
+insert_gate TIMEBOOST_cell_8166 in01s10
+insert_net TIMEBOOST_net_2570
+disconnect_pin TIMEBOOST_cell_8154:a
+connect_pin TIMEBOOST_cell_8154:a TIMEBOOST_net_2570
+connect_pin TIMEBOOST_cell_8166:a TIMEBOOST_net_2569
+connect_pin TIMEBOOST_cell_8166:o TIMEBOOST_net_2570
+insert_gate TIMEBOOST_cell_8167 in01s10
+insert_net TIMEBOOST_net_2571
+disconnect_pin TIMEBOOST_cell_8154:a
+connect_pin TIMEBOOST_cell_8154:a TIMEBOOST_net_2571
+connect_pin TIMEBOOST_cell_8167:a TIMEBOOST_net_2570
+connect_pin TIMEBOOST_cell_8167:o TIMEBOOST_net_2571
+insert_gate TIMEBOOST_cell_8168 in01s01
+insert_net TIMEBOOST_net_2572
+disconnect_pin mux_while_ln12_psv_q_reg_8_:o
+connect_pin mux_while_ln12_psv_q_reg_8_:o TIMEBOOST_net_2572
+connect_pin TIMEBOOST_cell_8168:a TIMEBOOST_net_2572
+connect_pin TIMEBOOST_cell_8168:o TIMEBOOST_net_2565
+insert_gate TIMEBOOST_cell_8169 in01s01
+insert_net TIMEBOOST_net_2573
+disconnect_pin mux_while_ln12_psv_q_reg_8_:o
+connect_pin mux_while_ln12_psv_q_reg_8_:o TIMEBOOST_net_2573
+connect_pin TIMEBOOST_cell_8169:a TIMEBOOST_net_2573
+connect_pin TIMEBOOST_cell_8169:o TIMEBOOST_net_2572
+insert_gate TIMEBOOST_cell_8170 in01s02
+insert_net TIMEBOOST_net_2574
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2574
+connect_pin TIMEBOOST_cell_8170:a TIMEBOOST_net_2574
+connect_pin TIMEBOOST_cell_8170:o TIMEBOOST_net_2563
+insert_gate TIMEBOOST_cell_8171 in01s02
+insert_net TIMEBOOST_net_2575
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2575
+connect_pin TIMEBOOST_cell_8171:a TIMEBOOST_net_2575
+connect_pin TIMEBOOST_cell_8171:o TIMEBOOST_net_2574
+insert_gate TIMEBOOST_cell_8172 in01s02
+insert_net TIMEBOOST_net_2576
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2576
+connect_pin TIMEBOOST_cell_8172:a TIMEBOOST_net_2576
+connect_pin TIMEBOOST_cell_8172:o TIMEBOOST_net_2575
+insert_gate TIMEBOOST_cell_8173 in01s02
+insert_net TIMEBOOST_net_2577
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_2577
+connect_pin TIMEBOOST_cell_8173:a TIMEBOOST_net_2577
+connect_pin TIMEBOOST_cell_8173:o TIMEBOOST_net_2576
+insert_gate TIMEBOOST_cell_9433 in01s01
+insert_net TIMEBOOST_net_3048
+disconnect_pin cos_out_reg_25_:d
+connect_pin cos_out_reg_25_:d TIMEBOOST_net_3048
+connect_pin TIMEBOOST_cell_9433:a n_43886
+connect_pin TIMEBOOST_cell_9433:o TIMEBOOST_net_3048
+insert_gate TIMEBOOST_cell_9434 in01s01
+insert_net TIMEBOOST_net_3049
+disconnect_pin cos_out_reg_25_:d
+connect_pin cos_out_reg_25_:d TIMEBOOST_net_3049
+connect_pin TIMEBOOST_cell_9434:a TIMEBOOST_net_3048
+connect_pin TIMEBOOST_cell_9434:o TIMEBOOST_net_3049
+insert_gate TIMEBOOST_cell_9435 in01s01
+insert_net TIMEBOOST_net_3050
+disconnect_pin cos_out_reg_28_:d
+connect_pin cos_out_reg_28_:d TIMEBOOST_net_3050
+connect_pin TIMEBOOST_cell_9435:a n_43904
+connect_pin TIMEBOOST_cell_9435:o TIMEBOOST_net_3050
+insert_gate TIMEBOOST_cell_9436 in01s01
+insert_net TIMEBOOST_net_3051
+disconnect_pin cos_out_reg_28_:d
+connect_pin cos_out_reg_28_:d TIMEBOOST_net_3051
+connect_pin TIMEBOOST_cell_9436:a TIMEBOOST_net_3050
+connect_pin TIMEBOOST_cell_9436:o TIMEBOOST_net_3051
+insert_gate TIMEBOOST_cell_9437 in01s01
+insert_net TIMEBOOST_net_3052
+disconnect_pin cos_out_reg_29_:d
+connect_pin cos_out_reg_29_:d TIMEBOOST_net_3052
+connect_pin TIMEBOOST_cell_9437:a n_43897
+connect_pin TIMEBOOST_cell_9437:o TIMEBOOST_net_3052
+insert_gate TIMEBOOST_cell_9438 in01s01
+insert_net TIMEBOOST_net_3053
+disconnect_pin cos_out_reg_29_:d
+connect_pin cos_out_reg_29_:d TIMEBOOST_net_3053
+connect_pin TIMEBOOST_cell_9438:a TIMEBOOST_net_3052
+connect_pin TIMEBOOST_cell_9438:o TIMEBOOST_net_3053
+insert_gate TIMEBOOST_cell_9439 in01s01
+insert_net TIMEBOOST_net_3054
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_19_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_19_:d TIMEBOOST_net_3054
+connect_pin TIMEBOOST_cell_9439:a n_1065
+connect_pin TIMEBOOST_cell_9439:o TIMEBOOST_net_3054
+insert_gate TIMEBOOST_cell_9440 in01s01
+insert_net TIMEBOOST_net_3055
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_19_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_19_:d TIMEBOOST_net_3055
+connect_pin TIMEBOOST_cell_9440:a TIMEBOOST_net_3054
+connect_pin TIMEBOOST_cell_9440:o TIMEBOOST_net_3055
+insert_gate TIMEBOOST_cell_9441 in01s01
+insert_net TIMEBOOST_net_3056
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_22_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_22_:d TIMEBOOST_net_3056
+connect_pin TIMEBOOST_cell_9441:a n_1189
+connect_pin TIMEBOOST_cell_9441:o TIMEBOOST_net_3056
+insert_gate TIMEBOOST_cell_9442 in01s01
+insert_net TIMEBOOST_net_3057
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_22_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_22_:d TIMEBOOST_net_3057
+connect_pin TIMEBOOST_cell_9442:a TIMEBOOST_net_3056
+connect_pin TIMEBOOST_cell_9442:o TIMEBOOST_net_3057
+insert_gate TIMEBOOST_cell_9443 in01s01
+insert_net TIMEBOOST_net_3058
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_23_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_23_:d TIMEBOOST_net_3058
+connect_pin TIMEBOOST_cell_9443:a n_1205
+connect_pin TIMEBOOST_cell_9443:o TIMEBOOST_net_3058
+insert_gate TIMEBOOST_cell_9444 in01s01
+insert_net TIMEBOOST_net_3059
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_23_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_23_:d TIMEBOOST_net_3059
+connect_pin TIMEBOOST_cell_9444:a TIMEBOOST_net_3058
+connect_pin TIMEBOOST_cell_9444:o TIMEBOOST_net_3059
+insert_gate TIMEBOOST_cell_9445 in01s01
+insert_net TIMEBOOST_net_3060
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_30_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_30_:d TIMEBOOST_net_3060
+connect_pin TIMEBOOST_cell_9445:a n_1142
+connect_pin TIMEBOOST_cell_9445:o TIMEBOOST_net_3060
+insert_gate TIMEBOOST_cell_9446 in01s01
+insert_net TIMEBOOST_net_3061
+disconnect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_30_:d
+connect_pin delay_add_ln22_unr2_stage2_stallmux_q_reg_30_:d TIMEBOOST_net_3061
+connect_pin TIMEBOOST_cell_9446:a TIMEBOOST_net_3060
+connect_pin TIMEBOOST_cell_9446:o TIMEBOOST_net_3061
+insert_gate TIMEBOOST_cell_9447 in01s01
+insert_net TIMEBOOST_net_3062
+disconnect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_16_:d
+connect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_16_:d TIMEBOOST_net_3062
+connect_pin TIMEBOOST_cell_9447:a n_1304
+connect_pin TIMEBOOST_cell_9447:o TIMEBOOST_net_3062
+insert_gate TIMEBOOST_cell_9448 in01s01
+insert_net TIMEBOOST_net_3063
+disconnect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_16_:d
+connect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_16_:d TIMEBOOST_net_3063
+connect_pin TIMEBOOST_cell_9448:a TIMEBOOST_net_3062
+connect_pin TIMEBOOST_cell_9448:o TIMEBOOST_net_3063
+insert_gate TIMEBOOST_cell_9449 in01s01
+insert_net TIMEBOOST_net_3064
+disconnect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_19_:d
+connect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_19_:d TIMEBOOST_net_3064
+connect_pin TIMEBOOST_cell_9449:a n_1334
+connect_pin TIMEBOOST_cell_9449:o TIMEBOOST_net_3064
+insert_gate TIMEBOOST_cell_9450 in01s01
+insert_net TIMEBOOST_net_3065
+disconnect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_19_:d
+connect_pin delay_xor_ln21_unr3_stage2_stallmux_q_reg_19_:d TIMEBOOST_net_3065
+connect_pin TIMEBOOST_cell_9450:a TIMEBOOST_net_3064
+connect_pin TIMEBOOST_cell_9450:o TIMEBOOST_net_3065
+insert_gate TIMEBOOST_cell_9451 in01s01
+insert_net TIMEBOOST_net_3066
+disconnect_pin sin_out_reg_24_:d
+connect_pin sin_out_reg_24_:d TIMEBOOST_net_3066
+connect_pin TIMEBOOST_cell_9451:a n_43910
+connect_pin TIMEBOOST_cell_9451:o TIMEBOOST_net_3066
+insert_gate TIMEBOOST_cell_9452 in01s01
+insert_net TIMEBOOST_net_3067
+disconnect_pin sin_out_reg_24_:d
+connect_pin sin_out_reg_24_:d TIMEBOOST_net_3067
+connect_pin TIMEBOOST_cell_9452:a TIMEBOOST_net_3066
+connect_pin TIMEBOOST_cell_9452:o TIMEBOOST_net_3067
+insert_gate TIMEBOOST_cell_9453 in01s01
+insert_net TIMEBOOST_net_3068
+disconnect_pin sin_out_reg_25_:d
+connect_pin sin_out_reg_25_:d TIMEBOOST_net_3068
+connect_pin TIMEBOOST_cell_9453:a n_43913
+connect_pin TIMEBOOST_cell_9453:o TIMEBOOST_net_3068
+insert_gate TIMEBOOST_cell_9454 in01s01
+insert_net TIMEBOOST_net_3069
+disconnect_pin sin_out_reg_25_:d
+connect_pin sin_out_reg_25_:d TIMEBOOST_net_3069
+connect_pin TIMEBOOST_cell_9454:a TIMEBOOST_net_3068
+connect_pin TIMEBOOST_cell_9454:o TIMEBOOST_net_3069
+insert_gate TIMEBOOST_cell_9455 in01s01
+insert_net TIMEBOOST_net_3070
+disconnect_pin sin_out_reg_26_:d
+connect_pin sin_out_reg_26_:d TIMEBOOST_net_3070
+connect_pin TIMEBOOST_cell_9455:a n_43915
+connect_pin TIMEBOOST_cell_9455:o TIMEBOOST_net_3070
+insert_gate TIMEBOOST_cell_9456 in01s01
+insert_net TIMEBOOST_net_3071
+disconnect_pin sin_out_reg_26_:d
+connect_pin sin_out_reg_26_:d TIMEBOOST_net_3071
+connect_pin TIMEBOOST_cell_9456:a TIMEBOOST_net_3070
+connect_pin TIMEBOOST_cell_9456:o TIMEBOOST_net_3071
+insert_gate TIMEBOOST_cell_9457 in01s01
+insert_net TIMEBOOST_net_3072
+disconnect_pin sin_out_reg_27_:d
+connect_pin sin_out_reg_27_:d TIMEBOOST_net_3072
+connect_pin TIMEBOOST_cell_9457:a n_43917
+connect_pin TIMEBOOST_cell_9457:o TIMEBOOST_net_3072
+insert_gate TIMEBOOST_cell_9458 in01s01
+insert_net TIMEBOOST_net_3073
+disconnect_pin sin_out_reg_27_:d
+connect_pin sin_out_reg_27_:d TIMEBOOST_net_3073
+connect_pin TIMEBOOST_cell_9458:a TIMEBOOST_net_3072
+connect_pin TIMEBOOST_cell_9458:o TIMEBOOST_net_3073
+insert_gate TIMEBOOST_cell_9459 in01s01
+insert_net TIMEBOOST_net_3074
+disconnect_pin sin_out_reg_30_:d
+connect_pin sin_out_reg_30_:d TIMEBOOST_net_3074
+connect_pin TIMEBOOST_cell_9459:a n_43919
+connect_pin TIMEBOOST_cell_9459:o TIMEBOOST_net_3074
+insert_gate TIMEBOOST_cell_9460 in01s01
+insert_net TIMEBOOST_net_3075
+disconnect_pin sin_out_reg_30_:d
+connect_pin sin_out_reg_30_:d TIMEBOOST_net_3075
+connect_pin TIMEBOOST_cell_9460:a TIMEBOOST_net_3074
+connect_pin TIMEBOOST_cell_9460:o TIMEBOOST_net_3075
+[+] Writing Verilog File ...
+[+] Writing Verilog File ... Done (runtime: 0.022628 seconds memory: +0 MB)
+[+] Writing SPEF File
+[+] Writing SPEF File Done (runtime: 0.000687 seconds memory: +0 MB)
+
+Total duration: 708.843 seconds

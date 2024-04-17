@@ -1,0 +1,130 @@
+  _______   _                      ____                          _   
+ |__   __| (_)                    |  _ \                        | |  
+    | |     _   _ __ ___     ___  | |_) |   ___     ___    ___  | |_ 
+    | |    | | | '_ ` _ \   / _ \ |  _ <   / _ \   / _ \  / __| | __|
+    | |    | | | | | | | | |  __/ | |_) | | (_) | | (_) | \__ \ | |_ 
+    |_|    |_| |_| |_| |_|  \___| |____/   \___/   \___/  |___/  \__|
+                                                                     
+Teams members : Dimitrios Mangiras, Apostolos Stefanidis
+Advisor    : Georgios Dimitrakopoulos
+University    : Electrical and Computer Engineering of Democritus University of Thrace in Xanthi, Greece
+
+tau file: usb_phy_fast/usb_phy_fast.tau2019
+sdc file: usb_phy_fast/usb_phy_fast.sdc
+output verilog file: usb_phy_fast/results/usb_phy_fast.out.v
+output spef file: usb_phy_fast/results/usb_phy_fast.out.spef
+output file: usb_phy_fast/results/usb_phy_fast.output
+verilog file: usb_phy_fast.v
+spef file: usb_phy_fast.spef
+lib file 0: ../libs/contest.lib
+Design name: usb_phy_fast
+Path name: usb_phy_fast/
+
+Parsing LIB file [usb_phy_fast/../libs/contest.lib][+] 
+[+]  Done (runtime: 0.170711 seconds memory: +24 MB)
+Parsed lib 0
+Parsing VERILOG file [usb_phy_fast/usb_phy_fast.v][+] 
+[+]  Done (runtime: 0.008957 seconds memory: +0 MB)
+Parsing SDC file [usb_phy_fast/usb_phy_fast.sdc][+] 
+[+]  Done (runtime: 0.000149 seconds memory: +0 MB)
+Parsed SDC file successfully
+Parsing SPEF file [usb_phy_fast/usb_phy_fast.spef][+] 
+[+]  Done (runtime: 1.6e-05 seconds memory: +0 MB)
+Parsed SPEF file successfully
+[+] Initializing Scenario service
+[+] Initializing Scenario service Done (runtime: 0.003176 seconds memory: +0 MB)
+[+] Initializing RoutingEstimator service
+[+] Initializing RoutingEstimator service Done (runtime: 8.3e-05 seconds memory: +0 MB)
+[+] Initializing Timer service
+[+] Initializing Timer service Done (runtime: 0.001688 seconds memory: +0 MB)
+[+] Initializing Scenario Vector service
+[+] Initializing Scenario Vector service Done (runtime: 0.009296 seconds memory: +5 MB)
+[+] Initializing Timer Vector service
+[+] Initializing Timer Vector service Done (runtime: 0.001071 seconds memory: +1 MB)
+[+] Initializing Model Vector service
+[+] Initializing Model Vector service Done (runtime: 7e-06 seconds memory: +0 MB)
+[+] Initializing Model service
+[+] Initializing Model service Done (runtime: 4e-06 seconds memory: +0 MB)
+[+] Building RCTree from SPEF file
+[+] Building RCTree from SPEF file Done (runtime: 5e-06 seconds memory: +0 MB)
+Started: Sat Mar 16 21:12:39 2024
+
+BEGIN_ECO
+insert_gate TIMEBOOST_cell_114 in01s02
+insert_net TIMEBOOST_net_43
+disconnect_pin g1842_u0:b
+connect_pin g1842_u0:b TIMEBOOST_net_43
+connect_pin TIMEBOOST_cell_114:a rst
+connect_pin TIMEBOOST_cell_114:o TIMEBOOST_net_43
+insert_gate TIMEBOOST_cell_115 in01s02
+insert_net TIMEBOOST_net_44
+disconnect_pin g1842_u0:b
+connect_pin g1842_u0:b TIMEBOOST_net_44
+connect_pin TIMEBOOST_cell_115:a TIMEBOOST_net_43
+connect_pin TIMEBOOST_cell_115:o TIMEBOOST_net_44
+insert_gate TIMEBOOST_cell_116 in01s06
+insert_net TIMEBOOST_net_45
+disconnect_pin i_rx_phy_hold_reg_reg_7__u0:o
+connect_pin i_rx_phy_hold_reg_reg_7__u0:o TIMEBOOST_net_45
+connect_pin TIMEBOOST_cell_116:a TIMEBOOST_net_45
+connect_pin TIMEBOOST_cell_116:o DataIn_o_7_
+insert_gate TIMEBOOST_cell_117 in01s06
+insert_net TIMEBOOST_net_46
+disconnect_pin i_rx_phy_hold_reg_reg_7__u0:o
+connect_pin i_rx_phy_hold_reg_reg_7__u0:o TIMEBOOST_net_46
+connect_pin TIMEBOOST_cell_117:a TIMEBOOST_net_46
+connect_pin TIMEBOOST_cell_117:o TIMEBOOST_net_45
+insert_gate TIMEBOOST_cell_446 in01s01
+insert_net TIMEBOOST_net_164
+disconnect_pin i_rx_phy_rxd_s0_reg_u0:d
+connect_pin i_rx_phy_rxd_s0_reg_u0:d TIMEBOOST_net_164
+connect_pin TIMEBOOST_cell_446:a rxd
+connect_pin TIMEBOOST_cell_446:o TIMEBOOST_net_164
+insert_gate TIMEBOOST_cell_447 in01s01
+insert_net TIMEBOOST_net_165
+disconnect_pin i_rx_phy_rxd_s0_reg_u0:d
+connect_pin i_rx_phy_rxd_s0_reg_u0:d TIMEBOOST_net_165
+connect_pin TIMEBOOST_cell_447:a TIMEBOOST_net_164
+connect_pin TIMEBOOST_cell_447:o TIMEBOOST_net_165
+insert_gate TIMEBOOST_cell_448 in01s01
+insert_net TIMEBOOST_net_166
+disconnect_pin i_rx_phy_rxdn_s0_reg_u0:d
+connect_pin i_rx_phy_rxdn_s0_reg_u0:d TIMEBOOST_net_166
+connect_pin TIMEBOOST_cell_448:a rxdn
+connect_pin TIMEBOOST_cell_448:o TIMEBOOST_net_166
+insert_gate TIMEBOOST_cell_449 in01s01
+insert_net TIMEBOOST_net_167
+disconnect_pin i_rx_phy_rxdn_s0_reg_u0:d
+connect_pin i_rx_phy_rxdn_s0_reg_u0:d TIMEBOOST_net_167
+connect_pin TIMEBOOST_cell_449:a TIMEBOOST_net_166
+connect_pin TIMEBOOST_cell_449:o TIMEBOOST_net_167
+insert_gate TIMEBOOST_cell_450 in01s01
+insert_net TIMEBOOST_net_168
+disconnect_pin i_rx_phy_rxdp_s0_reg_u0:d
+connect_pin i_rx_phy_rxdp_s0_reg_u0:d TIMEBOOST_net_168
+connect_pin TIMEBOOST_cell_450:a rxdp
+connect_pin TIMEBOOST_cell_450:o TIMEBOOST_net_168
+insert_gate TIMEBOOST_cell_451 in01s01
+insert_net TIMEBOOST_net_169
+disconnect_pin i_rx_phy_rxdp_s0_reg_u0:d
+connect_pin i_rx_phy_rxdp_s0_reg_u0:d TIMEBOOST_net_169
+connect_pin TIMEBOOST_cell_451:a TIMEBOOST_net_168
+connect_pin TIMEBOOST_cell_451:o TIMEBOOST_net_169
+insert_gate TIMEBOOST_cell_452 in01s01
+insert_net TIMEBOOST_net_170
+disconnect_pin i_tx_phy_txoe_reg_u0:d
+connect_pin i_tx_phy_txoe_reg_u0:d TIMEBOOST_net_170
+connect_pin TIMEBOOST_cell_452:a n_333
+connect_pin TIMEBOOST_cell_452:o TIMEBOOST_net_170
+insert_gate TIMEBOOST_cell_453 in01s01
+insert_net TIMEBOOST_net_171
+disconnect_pin i_tx_phy_txoe_reg_u0:d
+connect_pin i_tx_phy_txoe_reg_u0:d TIMEBOOST_net_171
+connect_pin TIMEBOOST_cell_453:a TIMEBOOST_net_170
+connect_pin TIMEBOOST_cell_453:o TIMEBOOST_net_171
+[+] Writing Verilog File ...
+[+] Writing Verilog File ... Done (runtime: 0.001036 seconds memory: +0 MB)
+[+] Writing SPEF File
+[+] Writing SPEF File Done (runtime: 0.001486 seconds memory: +0 MB)
+
+Total duration: 4.345 seconds

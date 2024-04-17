@@ -1,0 +1,154 @@
+  _______   _                      ____                          _   
+ |__   __| (_)                    |  _ \                        | |  
+    | |     _   _ __ ___     ___  | |_) |   ___     ___    ___  | |_ 
+    | |    | | | '_ ` _ \   / _ \ |  _ <   / _ \   / _ \  / __| | __|
+    | |    | | | | | | | | |  __/ | |_) | | (_) | | (_) | \__ \ | |_ 
+    |_|    |_| |_| |_| |_|  \___| |____/   \___/   \___/  |___/  \__|
+                                                                     
+Teams members : Dimitrios Mangiras, Apostolos Stefanidis
+Advisor    : Georgios Dimitrakopoulos
+University    : Electrical and Computer Engineering of Democritus University of Thrace in Xanthi, Greece
+
+tau file: matrix_mult_fast/matrix_mult_fast.tau2019
+sdc file: matrix_mult_fast/matrix_mult_fast.sdc
+output verilog file: matrix_mult_fast/results/matrix_mult_fast.out.v
+output spef file: matrix_mult_fast/results/matrix_mult_fast.out.spef
+output file: matrix_mult_fast/results/matrix_mult_fast.output
+verilog file: matrix_mult_fast.v
+spef file: matrix_mult_fast.spef
+lib file 0: ../libs/contest.lib
+Design name: matrix_mult_fast
+Path name: matrix_mult_fast/
+
+Parsing LIB file [matrix_mult_fast/../libs/contest.lib][+] 
+[+]  Done (runtime: 0.071048 seconds memory: +23 MB)
+Parsed lib 0
+Parsing VERILOG file [matrix_mult_fast/matrix_mult_fast.v][+] 
+[+]  Done (runtime: 0.837683 seconds memory: +70 MB)
+Parsing SDC file [matrix_mult_fast/matrix_mult_fast.sdc][+] 
+[+]  Done (runtime: 0.013671 seconds memory: +1 MB)
+Parsed SDC file successfully
+Parsing SPEF file [matrix_mult_fast/matrix_mult_fast.spef][+] 
+[+]  Done (runtime: 1.3e-05 seconds memory: +0 MB)
+Parsed SPEF file successfully
+[+] Initializing Scenario service
+[+] Initializing Scenario service Done (runtime: 0.02473 seconds memory: +7 MB)
+[+] Initializing RoutingEstimator service
+[+] Initializing RoutingEstimator service Done (runtime: 0.002428 seconds memory: +0 MB)
+[+] Initializing Timer service
+[+] Initializing Timer service Done (runtime: 0.044912 seconds memory: +102 MB)
+[+] Initializing Scenario Vector service
+[+] Initializing Scenario Vector service Done (runtime: 0.015138 seconds memory: +8 MB)
+[+] Initializing Timer Vector service
+[+] Initializing Timer Vector service Done (runtime: 0.043979 seconds memory: +102 MB)
+[+] Initializing Model Vector service
+[+] Initializing Model Vector service Done (runtime: 4e-06 seconds memory: +0 MB)
+[+] Initializing Model service
+[+] Initializing Model service Done (runtime: 2e-06 seconds memory: +0 MB)
+[+] Building RCTree from SPEF file
+[+] Building RCTree from SPEF file Done (runtime: 3e-06 seconds memory: +0 MB)
+Started: Fri Mar 22 01:22:32 2024
+
+BEGIN_ECO
+insert_gate TIMEBOOST_cell_7341 in01s03
+insert_net TIMEBOOST_net_1721
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_1721
+connect_pin TIMEBOOST_cell_7341:a TIMEBOOST_net_1721
+connect_pin TIMEBOOST_cell_7341:o rst
+insert_gate TIMEBOOST_cell_7342 in01s03
+insert_net TIMEBOOST_net_1722
+disconnect_pin rst
+connect_pin rst TIMEBOOST_net_1722
+connect_pin TIMEBOOST_cell_7342:a TIMEBOOST_net_1722
+connect_pin TIMEBOOST_cell_7342:o TIMEBOOST_net_1721
+insert_gate TIMEBOOST_cell_7343 in01s02
+insert_net TIMEBOOST_net_1723
+disconnect_pin g1002816:c
+connect_pin g1002816:c TIMEBOOST_net_1723
+connect_pin TIMEBOOST_cell_7343:a FE_OFN48_n_13069
+connect_pin TIMEBOOST_cell_7343:o TIMEBOOST_net_1723
+insert_gate TIMEBOOST_cell_7344 in01s02
+insert_net TIMEBOOST_net_1724
+disconnect_pin g1002816:c
+connect_pin g1002816:c TIMEBOOST_net_1724
+connect_pin TIMEBOOST_cell_7344:a TIMEBOOST_net_1723
+connect_pin TIMEBOOST_cell_7344:o TIMEBOOST_net_1724
+insert_gate TIMEBOOST_cell_18470 in01s01
+insert_net TIMEBOOST_net_5976
+disconnect_pin c_3_7_reg_14_:d
+connect_pin c_3_7_reg_14_:d TIMEBOOST_net_5976
+connect_pin TIMEBOOST_cell_18470:a n_43990
+connect_pin TIMEBOOST_cell_18470:o TIMEBOOST_net_5976
+insert_gate TIMEBOOST_cell_18471 in01s01
+insert_net TIMEBOOST_net_5977
+disconnect_pin c_3_7_reg_14_:d
+connect_pin c_3_7_reg_14_:d TIMEBOOST_net_5977
+connect_pin TIMEBOOST_cell_18471:a TIMEBOOST_net_5976
+connect_pin TIMEBOOST_cell_18471:o TIMEBOOST_net_5977
+insert_gate TIMEBOOST_cell_18472 in01s01
+insert_net TIMEBOOST_net_5978
+disconnect_pin c_4_0_reg_15_:d
+connect_pin c_4_0_reg_15_:d TIMEBOOST_net_5978
+connect_pin TIMEBOOST_cell_18472:a n_43988
+connect_pin TIMEBOOST_cell_18472:o TIMEBOOST_net_5978
+insert_gate TIMEBOOST_cell_18473 in01s01
+insert_net TIMEBOOST_net_5979
+disconnect_pin c_4_0_reg_15_:d
+connect_pin c_4_0_reg_15_:d TIMEBOOST_net_5979
+connect_pin TIMEBOOST_cell_18473:a TIMEBOOST_net_5978
+connect_pin TIMEBOOST_cell_18473:o TIMEBOOST_net_5979
+insert_gate TIMEBOOST_cell_18474 in01s01
+insert_net TIMEBOOST_net_5980
+disconnect_pin c_7_5_reg_15_:d
+connect_pin c_7_5_reg_15_:d TIMEBOOST_net_5980
+connect_pin TIMEBOOST_cell_18474:a n_43929
+connect_pin TIMEBOOST_cell_18474:o TIMEBOOST_net_5980
+insert_gate TIMEBOOST_cell_18475 in01s01
+insert_net TIMEBOOST_net_5981
+disconnect_pin c_7_5_reg_15_:d
+connect_pin c_7_5_reg_15_:d TIMEBOOST_net_5981
+connect_pin TIMEBOOST_cell_18475:a TIMEBOOST_net_5980
+connect_pin TIMEBOOST_cell_18475:o TIMEBOOST_net_5981
+insert_gate TIMEBOOST_cell_18476 in01s01
+insert_net TIMEBOOST_net_5982
+disconnect_pin delay_mul_ln34_unr3_unr0_stage2_stallmux_q_reg_15_:d
+connect_pin delay_mul_ln34_unr3_unr0_stage2_stallmux_q_reg_15_:d TIMEBOOST_net_5982
+connect_pin TIMEBOOST_cell_18476:a n_138798
+connect_pin TIMEBOOST_cell_18476:o TIMEBOOST_net_5982
+insert_gate TIMEBOOST_cell_18477 in01s01
+insert_net TIMEBOOST_net_5983
+disconnect_pin delay_mul_ln34_unr3_unr0_stage2_stallmux_q_reg_15_:d
+connect_pin delay_mul_ln34_unr3_unr0_stage2_stallmux_q_reg_15_:d TIMEBOOST_net_5983
+connect_pin TIMEBOOST_cell_18477:a TIMEBOOST_net_5982
+connect_pin TIMEBOOST_cell_18477:o TIMEBOOST_net_5983
+insert_gate TIMEBOOST_cell_18478 in01s01
+insert_net TIMEBOOST_net_5984
+disconnect_pin delay_mul_ln34_unr4_unr7_stage2_stallmux_q_reg_15_:d
+connect_pin delay_mul_ln34_unr4_unr7_stage2_stallmux_q_reg_15_:d TIMEBOOST_net_5984
+connect_pin TIMEBOOST_cell_18478:a n_37022
+connect_pin TIMEBOOST_cell_18478:o TIMEBOOST_net_5984
+insert_gate TIMEBOOST_cell_18479 in01s01
+insert_net TIMEBOOST_net_5985
+disconnect_pin delay_mul_ln34_unr4_unr7_stage2_stallmux_q_reg_15_:d
+connect_pin delay_mul_ln34_unr4_unr7_stage2_stallmux_q_reg_15_:d TIMEBOOST_net_5985
+connect_pin TIMEBOOST_cell_18479:a TIMEBOOST_net_5984
+connect_pin TIMEBOOST_cell_18479:o TIMEBOOST_net_5985
+insert_gate TIMEBOOST_cell_18480 in01s01
+insert_net TIMEBOOST_net_5986
+disconnect_pin delay_mul_ln34_unr6_unr7_stage2_stallmux_q_reg_15_:d
+connect_pin delay_mul_ln34_unr6_unr7_stage2_stallmux_q_reg_15_:d TIMEBOOST_net_5986
+connect_pin TIMEBOOST_cell_18480:a n_39671
+connect_pin TIMEBOOST_cell_18480:o TIMEBOOST_net_5986
+insert_gate TIMEBOOST_cell_18481 in01s01
+insert_net TIMEBOOST_net_5987
+disconnect_pin delay_mul_ln34_unr6_unr7_stage2_stallmux_q_reg_15_:d
+connect_pin delay_mul_ln34_unr6_unr7_stage2_stallmux_q_reg_15_:d TIMEBOOST_net_5987
+connect_pin TIMEBOOST_cell_18481:a TIMEBOOST_net_5986
+connect_pin TIMEBOOST_cell_18481:o TIMEBOOST_net_5987
+[+] Writing Verilog File ...
+[+] Writing Verilog File ... Done (runtime: 0.088315 seconds memory: +0 MB)
+[+] Writing SPEF File
+[+] Writing SPEF File Done (runtime: 0.002198 seconds memory: +0 MB)
+
+Total duration: 240.121 seconds

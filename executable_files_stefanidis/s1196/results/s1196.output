@@ -1,0 +1,160 @@
+  _______   _                      ____                          _   
+ |__   __| (_)                    |  _ \                        | |  
+    | |     _   _ __ ___     ___  | |_) |   ___     ___    ___  | |_ 
+    | |    | | | '_ ` _ \   / _ \ |  _ <   / _ \   / _ \  / __| | __|
+    | |    | | | | | | | | |  __/ | |_) | | (_) | | (_) | \__ \ | |_ 
+    |_|    |_| |_| |_| |_|  \___| |____/   \___/   \___/  |___/  \__|
+                                                                     
+Teams members : Dimitrios Mangiras, Apostolos Stefanidis
+Advisor    : Georgios Dimitrakopoulos
+University    : Electrical and Computer Engineering of Democritus University of Thrace in Xanthi, Greece
+
+tau file: s1196/s1196.tau2019
+sdc file: s1196/design/s1196.sdc
+output verilog file: s1196/results/s1196.out.v
+output spef file: s1196/results/s1196.out.spef
+output file: s1196/results/s1196.output
+verilog file: design/s1196.v
+spef file: design/s1196.spef
+lib file 0: ../libs/NangateOpenCellLibrary_typical.lib
+Design name: s1196
+Path name: s1196/
+
+Parsing LIB file [s1196/../libs/NangateOpenCellLibrary_typical.lib][+] 
+[+]  Done (runtime: 0.332436 seconds memory: +38 MB)
+Parsed lib 0
+Parsing VERILOG file [s1196/design/s1196.v][+] 
+[+]  Done (runtime: 0.005181 seconds memory: +0 MB)
+Parsing SDC file [s1196/design/s1196.sdc][+] 
+[+]  Done (runtime: 0.000334 seconds memory: +0 MB)
+Parsed SDC file successfully
+Parsing SPEF file [s1196/design/s1196.spef][+] 
+[+]  Done (runtime: 1.7e-05 seconds memory: +0 MB)
+Parsed SPEF file successfully
+[+] Initializing Scenario service
+[+] Initializing Scenario service Done (runtime: 0.00153 seconds memory: +0 MB)
+[+] Initializing RoutingEstimator service
+[+] Initializing RoutingEstimator service Done (runtime: 7.8e-05 seconds memory: +0 MB)
+[+] Initializing Timer service
+[+] Initializing Timer service Done (runtime: 0.00086 seconds memory: +0 MB)
+[+] Initializing Scenario Vector service
+[+] Initializing Scenario Vector service Done (runtime: 0.001522 seconds memory: +0 MB)
+[+] Initializing Timer Vector service
+[+] Initializing Timer Vector service Done (runtime: 0.000619 seconds memory: +0 MB)
+[+] Initializing Model Vector service
+[+] Initializing Model Vector service Done (runtime: 9e-06 seconds memory: +0 MB)
+[+] Initializing Model service
+[+] Initializing Model service Done (runtime: 5e-06 seconds memory: +0 MB)
+[+] Building RCTree from SPEF file
+[+] Building RCTree from SPEF file Done (runtime: 6e-06 seconds memory: +0 MB)
+Started: Sat Mar 16 21:14:35 2024
+
+BEGIN_ECO
+insert_gate TIMEBOOST_cell_0 CLKBUF_X1
+insert_net TIMEBOOST_net_0
+disconnect_pin inst_557:CK
+connect_pin inst_557:CK TIMEBOOST_net_0
+connect_pin TIMEBOOST_cell_0:A net_572
+connect_pin TIMEBOOST_cell_0:Z TIMEBOOST_net_0
+insert_gate TIMEBOOST_cell_1 CLKBUF_X1
+insert_net TIMEBOOST_net_1
+disconnect_pin inst_559:CK
+connect_pin inst_559:CK TIMEBOOST_net_1
+connect_pin TIMEBOOST_cell_1:A net_586
+connect_pin TIMEBOOST_cell_1:Z TIMEBOOST_net_1
+insert_gate TIMEBOOST_cell_2 CLKBUF_X1
+insert_net TIMEBOOST_net_2
+disconnect_pin inst_555:CK
+connect_pin inst_555:CK TIMEBOOST_net_2
+connect_pin TIMEBOOST_cell_2:A net_600
+connect_pin TIMEBOOST_cell_2:Z TIMEBOOST_net_2
+insert_gate TIMEBOOST_cell_3 CLKBUF_X1
+insert_net TIMEBOOST_net_3
+disconnect_pin inst_562:CK
+connect_pin inst_562:CK TIMEBOOST_net_3
+connect_pin TIMEBOOST_cell_3:A net_577
+connect_pin TIMEBOOST_cell_3:Z TIMEBOOST_net_3
+insert_gate TIMEBOOST_cell_4 CLKBUF_X1
+insert_net TIMEBOOST_net_4
+disconnect_pin inst_554:CK
+connect_pin inst_554:CK TIMEBOOST_net_4
+connect_pin TIMEBOOST_cell_4:A net_603
+connect_pin TIMEBOOST_cell_4:Z TIMEBOOST_net_4
+insert_gate TIMEBOOST_cell_5 CLKBUF_X1
+insert_net TIMEBOOST_net_5
+disconnect_pin inst_556:CK
+connect_pin inst_556:CK TIMEBOOST_net_5
+connect_pin TIMEBOOST_cell_5:A net_599
+connect_pin TIMEBOOST_cell_5:Z TIMEBOOST_net_5
+insert_gate TIMEBOOST_cell_6 CLKBUF_X1
+insert_net TIMEBOOST_net_6
+disconnect_pin inst_561:CK
+connect_pin inst_561:CK TIMEBOOST_net_6
+connect_pin TIMEBOOST_cell_6:A net_580
+connect_pin TIMEBOOST_cell_6:Z TIMEBOOST_net_6
+insert_gate TIMEBOOST_cell_7 CLKBUF_X1
+insert_net TIMEBOOST_net_7
+disconnect_pin inst_560:CK
+connect_pin inst_560:CK TIMEBOOST_net_7
+connect_pin TIMEBOOST_cell_7:A net_582
+connect_pin TIMEBOOST_cell_7:Z TIMEBOOST_net_7
+insert_gate TIMEBOOST_cell_8 CLKBUF_X1
+insert_net TIMEBOOST_net_8
+disconnect_pin inst_551:CK
+connect_pin inst_551:CK TIMEBOOST_net_8
+connect_pin TIMEBOOST_cell_8:A net_623
+connect_pin TIMEBOOST_cell_8:Z TIMEBOOST_net_8
+insert_gate TIMEBOOST_cell_9 CLKBUF_X1
+insert_net TIMEBOOST_net_9
+disconnect_pin inst_563:CK
+connect_pin inst_563:CK TIMEBOOST_net_9
+connect_pin TIMEBOOST_cell_9:A net_595
+connect_pin TIMEBOOST_cell_9:Z TIMEBOOST_net_9
+insert_gate TIMEBOOST_cell_125 CLKBUF_X1
+insert_net TIMEBOOST_net_52
+disconnect_pin inst_557:CK
+connect_pin inst_557:CK TIMEBOOST_net_52
+connect_pin TIMEBOOST_cell_125:A TIMEBOOST_net_0
+connect_pin TIMEBOOST_cell_125:Z TIMEBOOST_net_52
+insert_gate TIMEBOOST_cell_126 CLKBUF_X1
+insert_net TIMEBOOST_net_53
+disconnect_pin inst_559:CK
+connect_pin inst_559:CK TIMEBOOST_net_53
+connect_pin TIMEBOOST_cell_126:A TIMEBOOST_net_1
+connect_pin TIMEBOOST_cell_126:Z TIMEBOOST_net_53
+insert_gate TIMEBOOST_cell_127 CLKBUF_X1
+insert_net TIMEBOOST_net_54
+disconnect_pin inst_555:CK
+connect_pin inst_555:CK TIMEBOOST_net_54
+connect_pin TIMEBOOST_cell_127:A TIMEBOOST_net_2
+connect_pin TIMEBOOST_cell_127:Z TIMEBOOST_net_54
+insert_gate TIMEBOOST_cell_128 CLKBUF_X1
+insert_net TIMEBOOST_net_55
+disconnect_pin inst_562:CK
+connect_pin inst_562:CK TIMEBOOST_net_55
+connect_pin TIMEBOOST_cell_128:A TIMEBOOST_net_3
+connect_pin TIMEBOOST_cell_128:Z TIMEBOOST_net_55
+insert_gate TIMEBOOST_cell_129 CLKBUF_X1
+insert_net TIMEBOOST_net_56
+disconnect_pin inst_561:CK
+connect_pin inst_561:CK TIMEBOOST_net_56
+connect_pin TIMEBOOST_cell_129:A TIMEBOOST_net_6
+connect_pin TIMEBOOST_cell_129:Z TIMEBOOST_net_56
+insert_gate TIMEBOOST_cell_130 CLKBUF_X1
+insert_net TIMEBOOST_net_57
+disconnect_pin inst_560:CK
+connect_pin inst_560:CK TIMEBOOST_net_57
+connect_pin TIMEBOOST_cell_130:A TIMEBOOST_net_7
+connect_pin TIMEBOOST_cell_130:Z TIMEBOOST_net_57
+insert_gate TIMEBOOST_cell_131 CLKBUF_X1
+insert_net TIMEBOOST_net_58
+disconnect_pin inst_563:CK
+connect_pin inst_563:CK TIMEBOOST_net_58
+connect_pin TIMEBOOST_cell_131:A TIMEBOOST_net_9
+connect_pin TIMEBOOST_cell_131:Z TIMEBOOST_net_58
+[+] Writing Verilog File ...
+[+] Writing Verilog File ... Done (runtime: 0.001351 seconds memory: +0 MB)
+[+] Writing SPEF File
+[+] Writing SPEF File Done (runtime: 0.00012 seconds memory: +0 MB)
+
+Total duration: 3.068 seconds
